@@ -2,12 +2,16 @@ package com.epam.loops;
 
 public class Power {
 
-    public void printPower(int numberToPrint, int power) {
+    public void printPower(int number, int power) {
 
-    }
+        long result = 1;
 
-    public static void main(String[] args) {
-        new Power().printPower(10, 3);
+        for (int i = 0; i < power; i++) {
+            result *= number;
+        }
+
+        System.out.println(result);
+
     }
 
 }

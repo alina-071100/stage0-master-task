@@ -2,12 +2,18 @@ package com.epam.loops;
 
 public class HalfPyramid {
 
-    public void printHalfPyramid(int cathetusLength) {
+    public void printHalfPyramid(int legLength) {
 
-    }
+        for (int i = 1; i <= legLength; i++) {
 
-    public static void main(String[] args) {
-        new HalfPyramid().printHalfPyramid(8);
+            for (int j = 0; j < legLength; j++) {
+                System.out.print(legLength - j > i ? " " : "*");
+            }
+
+            System.out.println();
+
+        }
+
     }
 
 }
